@@ -1,0 +1,108 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #6ff44d;
+    --secundario: #3cc32f;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.contenido {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(206, 98%, 25%, 0.831);
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.contenido a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    text-align: center; 
+    margin: 0 1rem; 
+}
+
+img {
+    min-width: 100px;
+    max-width: 1000px;
+    height: 2rem;
+    text-align: center;
+}
+
+.ubicacion {
+    background-size: cover;
+    background-image: url("https://siaguanta.com/wp-content/uploads/2020/01/arreglos4.jpg");
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.ubicacion i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}   
+
+.container-services{
+   display: flex;
+}
+
+
+.services{
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    color: black;
+    width: 30%;
+    padding: 20px;
+    background-color: hsla(206, 45%, 49%, 0.831);
+    border-radius: 60%;
+ 
+}
+
+.services:hover{
+    box-shadow: 25px 25px 25px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    transform: translateY(-10px);
+}
+
+.services img{
+    width: 50px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+    color: hsla(0, 0%, 0%, 0.831);
+}
+
+p{
+    margin: 0;
+    padding: 0.5;
+    color: black;
+}
+
+@media screen and (max-width: 768px){
+    .container-services{
+        flex-direction: column;
+    }
+
+    .services{
+        width: 80%;
+    }
+    
+    
+}
+
